@@ -1,0 +1,91 @@
+
+body {
+    background-color:rgb(1, 1, 14);
+}
+
+
+.carousel {
+position: relative;
+margin: 0 auto;
+margin-top: 70px;
+width: 50%;
+height: 80vh;
+}
+
+.carousel-list-container {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 1px 1px 1px 3px rgba(71, 71, 128, 0.15);
+    border-radius: 8px;
+}
+ .carousel-list, .carousel-slide, .carousel-image {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+}
+
+.current-slide {
+    opacity: 1; 
+}
+
+.carousel-image {
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.carousel-button {
+    position: absolute;
+    height: 100%;
+    width: 70px;
+    --pxfrm-prnt: -90px;
+    top: 0;
+    font-size: 2rem;
+    opacity: 0;
+    border: none;
+    border-radius: 10px;
+}
+
+.carousel-button:hover {
+   opacity: 1;
+   transition: all 300ms ease-in-out;
+}
+
+.carousel-button.left {
+   left: var(--pxfrm-prnt);
+}
+
+.carousel-button.right {
+    right: var(--pxfrm-prnt);
+ }
+
+ .carousel-nav {
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+ }
+
+ .carousel-indicator {
+    border: none;
+    margin: 0 4px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: rgba(71, 71, 128, 0.4);
+    cursor: pointer;
+ }
+
+ button.current-dot {
+    background-color: rgb(104, 104, 175);
+ }
+
+ .hidden {
+    display: none;
+ }
